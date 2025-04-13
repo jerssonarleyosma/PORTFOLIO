@@ -1,0 +1,39 @@
+@use '@variables' as *;
+
+
+  .textwriting-container {
+    text-align: center;
+    &__line{
+      display: inline-flex;
+      animation: blink-caret .5s step-end infinite alternate;
+      & p {
+        display: inline-block;
+        position: absolute;
+        font-family: 'JetBrains Mono', monospace;
+        font-weight: 700;
+        color: light-dark(black, white);
+        opacity: 0 ;
+        transition: all 3s ease-in-out;
+      }
+    }
+    
+  }
+
+  @keyframes typing {
+    0% {
+      opacity: 0;
+      transform: translateY(-10px);
+      position: absolute;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0) ;
+      position: relative;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
