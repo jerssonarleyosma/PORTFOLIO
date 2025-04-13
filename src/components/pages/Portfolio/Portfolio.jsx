@@ -293,7 +293,7 @@ const Portfolio = () => {
           <input type="email" name="email" id="email" placeholder='Correo' required onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
          
         
-          <textarea name="message" id="message" placeholder='Mensaje' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} ></textarea>
+          <textarea name="message" maxLength={100} id="message" placeholder='Mensaje max 100' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} ></textarea>
    
           <button type="submit">Enviar mensaje</button>
 
