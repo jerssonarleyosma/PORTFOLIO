@@ -287,13 +287,13 @@ const Portfolio = () => {
         <form action="post" className='contact__form'>
           <h3>Escribeme</h3>
       
-          <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')}/>
+          <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
        
      
-          <input type="email" name="email" id="email" placeholder='Correo' required/>
+          <input type="email" name="email" id="email" placeholder='Correo' required onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
          
         
-          <textarea name="message" id="message" placeholder='Mensaje' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} ></textarea>
+          <textarea name="message" id="message" placeholder='Mensaje' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} ></textarea>
    
           <button type="submit">Enviar mensaje</button>
 

@@ -74,3 +74,12 @@
         height: 26px;
     }
 }
+
+
+@media screen and (min-height: 240px) and (max-width: 499px) {
+    .scheme-buttonA {
+        top: 30px;
+        right: 10px;
+        position: fixed;
+    }
+}
