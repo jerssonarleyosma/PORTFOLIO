@@ -635,6 +635,14 @@
             clip-path: none;
             
         }
+        & .contact {
+            &__form {
+                & > textarea {
+                    min-height: 120px;
+                    max-height: 250px;
+                }
+            }
+        } 
     }
     
     .borders:nth-last-child(2) {
