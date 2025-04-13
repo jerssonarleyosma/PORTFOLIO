@@ -5,7 +5,6 @@ import IconGitHub from '@atoms/IconSvg/IconGitHub.jsx'
 import IconDownload from '@atoms/IconSvg/IconDownload.jsx'
 import IconUpWork from '@atoms/IconSvg/IconUpWork.jsx'
 import IconW from '@atoms/IconSvg/IconW.jsx'
-import imgproyect from '@images/portfolio/proyectos.jpg'
 import { TextWriting } from '@atoms/Texts/TextWriting/TextWriting'
 
 
@@ -18,7 +17,7 @@ const Portfolio = () => {
         <p className='introduction__paragraph'>
           <span>👋</span> <span>Desarrollador Frontend</span> <br /><span>🔧</span> <span>Mi enfoque principal es JavaScript y la maquetación precisa de diseños web.</span>
         </p>
-        <img className='introduction__image' src='/src/assets/images/portfolio/perfil.jpg' alt="Perfil" />
+        <img className='introduction__image' src='imagesProyect/perfil.jpg' alt="Perfil" />
         <div className='introduction__social social-link'>
             <div className='social-link__item'>
               <a href="https://www.upwork.com/freelancers/jerssono" target='__blank'><IconUpWork/> UpWork</a>
@@ -34,7 +33,7 @@ const Portfolio = () => {
             </div>
 
         </div>
-        <a  className='introduction__button' href="/src/assets/images/portfolio/perfil.jpg"  download="jersson osma CV"><span><IconDownload/></span>CV</a>
+        <a  className='introduction__button' href="imagesProyect/perfil.jpg"  download="jersson osma CV"><span><IconDownload/></span>CV</a>
 
       </div>
       
@@ -50,7 +49,7 @@ const Portfolio = () => {
             
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -69,7 +68,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -88,7 +87,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -107,7 +106,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -126,7 +125,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -145,7 +144,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -164,7 +163,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -183,7 +182,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -202,7 +201,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -221,7 +220,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -240,26 +239,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
-
-              </div>
-              <div className='card__description'>
-                <h3>Nombre Del Proyecto</h3>
-                <p>Descripción del proyecto corta y concisa para lectura rapida</p>
-                <div>
-                  <span>html</span><span>css</span><span>javascript</span><span>Sass</span><span>React</span><span>Vite</span>
-                </div>
-                <div>
-                  <a href="">Ver Código</a>
-                  <a href="">Ver Proyecto</a>
-                </div>
-              </div>
-              <div></div>
-            </div>
-            
-            <div className='wrap__card card'>
-              <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
@@ -278,7 +258,7 @@ const Portfolio = () => {
 
             <div className='wrap__card card'>
               <div className='card__imagen'>
-                <img src={imgproyect} alt="" />
+                <img src='imagesProyect/proyectos.jpg' alt="imagen proyecto" />
 
               </div>
               <div className='card__description'>
