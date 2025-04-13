@@ -3,6 +3,7 @@ import react from '@vitejs/plugin-react-swc'
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/PORTFOLIO/', // MUY IMPORTANTE para GitHub Pages
   plugins: [react()],
   server: {
     host: 'localhost', // Escuchar el local host para escuchar en todas las interfaces es con 0.0.0.0  
