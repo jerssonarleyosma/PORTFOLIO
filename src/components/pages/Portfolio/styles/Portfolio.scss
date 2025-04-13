@@ -578,10 +578,13 @@
             }
         }
         & .projects {
-            width: 80%;
+            width: 100%;
             margin: auto;
             clip-path: none;
             
+        }
+        & .contact {
+            margin-bottom: 200px;
         }
     }
     
