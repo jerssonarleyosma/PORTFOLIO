@@ -37,6 +37,7 @@
     background-color: light-dark($p2-color, $s5-color);
     border-radius: 10px;
     box-shadow: inset -8px -65px 1px light-dark($p3-color, $s4-color), inset 2px 2px 1px light-dark($p3-color, $s4-color);
+    z-index: 1;
     &__name {
         width: 80%;
         margin: 0 0 8px 0;
@@ -184,6 +185,18 @@
             }
         }
     }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: url(backgrounds/divTrama.jpg);
+        z-index: -1;
+        opacity: 0.1;
+    }
 
     @keyframes hello {
         0% {
@@ -265,6 +278,7 @@
         100% 100%, 
         0% 100%
     );
+    z-index: 1;
     transition: all 0.3s ease-in-out;
     &__tittle {
         height: 27px;
@@ -420,7 +434,18 @@
             }
         }
     }
-
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: url(backgrounds/divTrama.jpg);
+        z-index: -1;
+        opacity: 0.2;
+    }
 }
 
 .contact {
@@ -432,6 +457,7 @@
     box-shadow: inset -2px -2px 1px light-dark($p3-color, $s4-color), inset 2px 2px 1px light-dark($p3-color, $s4-color);
     border-radius: 10px;
     align-content: center;
+    z-index: 1;
     &__form {
         width: 100%;
         height: 100%;
@@ -509,7 +535,21 @@
                 color: light-dark($p-color, $s5-color);
             }
         }
+        
     }
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        background: url(backgrounds/divTrama.jpg);
+        z-index: -1;
+        opacity: 0.2;
+    }
+    
 }
 
 .borders:nth-last-child(1) {

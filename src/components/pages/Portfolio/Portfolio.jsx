@@ -34,7 +34,7 @@ const Portfolio = () => {
         Swal.fire({
           icon: 'error',
           title: 'Oops...',
-          text: 'Hubo un error al enviar el mensaje. Intenta de nuevo.',
+          text: 'Hubo un error al enviar el mensaje. Intenta de nuevo con otro medio de contacto.',
         });
       });
   };
