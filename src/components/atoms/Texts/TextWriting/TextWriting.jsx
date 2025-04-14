@@ -16,7 +16,7 @@ import './styles/TextWrinting.scss'
 const separateDataSize = (str) => {
     
     const match = str.match(/(\d+(\.\d+)?)([a-zA-Z%]*)/);
-    console.log(match)
+    
     if (match) {
         const number = parseFloat(match[1]); 
         const unit = match[3] || 'px'; 

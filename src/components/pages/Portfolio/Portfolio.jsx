@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useRef } from 'react';
+import Swal from 'sweetalert2';
+import emailjs from '@emailjs/browser';
 import './styles/Portfolio.scss'
 import IconLinkedin from '@atoms/IconSvg/IconLinkedin.jsx'
 import IconGitHub from '@atoms/IconSvg/IconGitHub.jsx'
@@ -9,6 +11,35 @@ import { TextWriting } from '@atoms/Texts/TextWriting/TextWriting'
 
 
 const Portfolio = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+  
+    emailjs.sendForm('service_y97wzsd', 'template_a27eg7v', form.current, 'TZJpeWjpln7XduENg')
+      .then((result) => {
+        Swal.fire({
+          toast: true,
+          position: 'top-end',
+          icon: 'success',
+          title: 'Mensaje enviado con éxito',
+          showConfirmButton: false,
+          timer: 3000,
+          timerProgressBar: true,
+        });
+        form.current.reset();
+      }, (error) => {
+        console.error(error.text);
+        Swal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Hubo un error al enviar el mensaje. Intenta de nuevo.',
+        });
+      });
+  };
+
+
   return (
     <section className="portfolio">
       <div className='portfolio__introduction introduction'>
@@ -284,7 +315,7 @@ const Portfolio = () => {
       </div>
 
       <div className='portfolio__contact contact'>
-        <form action="post" className='contact__form'>
+        <form ref={form} onSubmit={sendEmail} className='contact__form'>
           <h3>Escribeme</h3>
       
           <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
