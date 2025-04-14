@@ -8,7 +8,7 @@
     display: grid;
     justify-content: center;
     grid-template:
-        "intro intro proyects" minmax(207px, 3fr)
+        "intro intro proyects" minmax(257px, 3fr)
         "contact contact proyects" 4fr / 210px 210px 1fr;
     gap: 28px;
     &__introduction {
