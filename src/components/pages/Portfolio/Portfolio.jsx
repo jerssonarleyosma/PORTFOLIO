@@ -13,7 +13,7 @@ import { TextWriting } from '@atoms/Texts/TextWriting/TextWriting'
 const scrollToStart = (e) => {
   setTimeout(() => {
     e.target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-  }, 100);
+  }, 1500);
 };
 
 
