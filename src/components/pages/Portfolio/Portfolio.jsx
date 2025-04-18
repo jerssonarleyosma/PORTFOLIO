@@ -10,6 +10,14 @@ import IconW from '@atoms/IconSvg/IconW.jsx'
 import { TextWriting } from '@atoms/Texts/TextWriting/TextWriting'
 
 
+const scrollToStart = (e) => {
+  setTimeout(() => {
+    e.target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }, 100);
+};
+
+
+
 const Portfolio = () => {
 
   const form = useRef();
@@ -318,13 +326,13 @@ const Portfolio = () => {
         <form ref={form} onSubmit={sendEmail} className='contact__form'>
           <h3>Escribeme</h3>
       
-          <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
+          <input type="text" name="name" id="name" placeholder='Nombre' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu nombre')} onInput={(e) => e.target.setCustomValidity('')} onFocus={scrollToStart} />
        
      
-          <input type="email" name="email" id="email" placeholder='Correo' required onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} />
+          <input type="email" name="email" id="email" placeholder='Correo' required onFocus={scrollToStart} />
          
         
-          <textarea name="message" maxLength={100} id="message" placeholder='Mensaje max 100' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} onFocus={(e) => e.target.scrollIntoView({ behavior: 'smooth', block: 'center' })} ></textarea>
+          <textarea name="message" maxLength={200} id="message" placeholder='Message max 200' required onInvalid={(e) => e.target.setCustomValidity('Por favor ingresa tu mensaje para comunicarme contigo')} onInput={(e) => e.target.setCustomValidity('')} onFocus={scrollToStart} ></textarea>
    
           <button type="submit">Enviar mensaje</button>
 

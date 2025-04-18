@@ -37,3 +37,9 @@
   scrollbar-color: light-dark($b-color, $w-color) light-dark($gs-color, $b-color);
   scrollbar-gutter: stable;
 }
+
+@media screen and (min-width: 240px) and (max-width: 499px) {
+  #root {
+    padding: 0;
+  }
+}
