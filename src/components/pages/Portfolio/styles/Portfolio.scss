@@ -563,7 +563,7 @@
     height: 15px;
     border-top-right-radius: 10px;
     background-color: transparent;
-    box-shadow: 3px -3px light-dark($p-color, $p5-color);
+    box-shadow: 3px -3px light-dark($s-color, $p5-color);
     z-index: 1;
     transition: all 0.3s ease-in-out;
 }
@@ -575,7 +575,7 @@
     width: 15px;
     height: 15px;
     border-bottom-left-radius: 10px;
-    background-color: light-dark($p-color, $p5-color);
+    background-color: light-dark($s-color, $p5-color);
     box-shadow: -3px 3px light-dark($p3-color, $s4-color);
     z-index: 1;
     transition: all 0.3s ease-in-out;
@@ -621,7 +621,7 @@
             }
         }
         & .projects {
-            width: 100%;
+            width: 80%;
             margin: auto;
             clip-path: none;
             
@@ -690,8 +690,9 @@
     }
     
     .borders:nth-last-child(2) {
-        background-color: light-dark($p-color, $p5-color);
-        box-shadow: -3px 3px light-dark($p2-color, $s5-color);
+        background-color: light-dark($s-color, $p5-color);
+        box-shadow: -3px 3px light-dark(rgba($p2-color, 0.5), $s5-color);
+        
     }
 }
 
